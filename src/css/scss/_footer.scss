@@ -1,0 +1,27 @@
+.footer {
+  background-color: $primary-dark;
+  padding: 6rem 0;
+
+  .content-container {
+    column-gap: 10rem;
+  }
+
+  ul {
+    margin: 1.2rem 0 0;
+
+    li {
+      padding: 0.4rem 0;
+
+      a {
+        color: $primary-offwhite;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 640px) {
+  .footer .content-container {
+    flex-direction: column;
+    row-gap: 4rem;
+  }
+}

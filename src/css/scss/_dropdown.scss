@@ -1,0 +1,35 @@
+.dropdown {
+  position: relative;
+}
+
+.dropdown__input {
+  border-radius: 5px;
+  width: 100%;
+  padding: 0.8rem;
+  font-family: $global-font;
+  cursor: pointer;
+}
+
+.dropdown__options {
+  position: absolute;
+  top: 110%;
+  left: 0;
+  right: 0;
+  background: $primary-offwhite;
+  border-radius: 5px;
+  z-index: 1;
+}
+
+.dropdown__option {
+  transition: 75ms ease-in-out;
+  padding: 0.8rem;
+  cursor: pointer;
+  color: $primary-dark;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+.dropdown__option:hover {
+  background: $primary-superlight;
+  color: $true-white;
+}

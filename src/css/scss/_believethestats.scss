@@ -1,0 +1,61 @@
+.believethestats {
+  padding: 4rem 0;
+  background-color: $primary-dark;
+
+  .believethestats__intro {
+    border-right: 1px solid $primary-superlight;
+    flex-basis: 40%;
+    padding-right: 2rem;
+
+    a {
+      color: $primary-lighter;
+    }
+
+    .intro__header {
+      position: relative;
+      font-size: rem-calc(112);
+      width: 300px;
+      min-height: 60px;
+      z-index: 1;
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 12rem;
+        height: 4rem;
+        top: 1rem;
+        background-color: #288866;
+        z-index: -1;
+      }
+    }
+
+    p {
+      font-size: rem-calc(20);
+      color: $white;
+    }
+  }
+
+  .believethestats__content {
+    flex-basis: 60%;
+
+    p {
+      color: $light-grey;
+    }
+  }
+}
+
+@media all and (max-width: 740px) {
+  .believethestats {
+    padding: 2rem 0;
+
+    .believethestats__intro {
+      border-right: 0;
+      border-bottom: 1px solid $primary-superlight;
+      margin-bottom: 2rem;
+    }
+
+    .content-container {
+      flex-direction: column;
+    }
+  }
+}

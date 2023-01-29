@@ -1,0 +1,36 @@
+.work-widgets {
+  margin-top: 8rem;
+
+  .dark {
+    background-color: $primary-dark;
+    padding: 2rem 0;
+
+    .content-container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .work-widget {
+    margin: 4rem 0;
+
+    .content-container {
+      column-gap: 1rem;
+    }
+
+    .work-widget__image {
+      flex-basis: 50%;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .work-widget__content {
+      .sectionintro {
+        max-width: 100%;
+      }
+      flex-basis: 70%;
+    }
+  }
+}

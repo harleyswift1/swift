@@ -1,0 +1,52 @@
+.hero {
+  display: flex;
+  margin-bottom: 4rem;
+
+  .hero__content {
+    align-self: center;
+
+    p {
+      font-size: rem-calc(18);
+    }
+  }
+
+  .hero__buttons {
+    margin-top: 2rem;
+
+    span {
+      color: $primary-dark;
+      margin: 0 1rem;
+    }
+  }
+
+  .trustpilot__image {
+    margin-top: 1.4rem;
+  }
+
+  .hero__image {
+    background-color: $primary-dark;
+    border-radius: 5px;
+    max-width: 50%;
+
+    img {
+      height: 80%;
+      width: auto;
+      transform: translateX(-4rem) translateY(4rem);
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .hero {
+    margin-bottom: 4rem;
+
+    .hero__image {
+      display: none;
+    }
+
+    .hero__content {
+      margin-top: 0;
+      max-width: 30rem;
+    }
+  }
+}

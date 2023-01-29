@@ -1,0 +1,23 @@
+.previouswork {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .previouswork__image {
+    flex-basis: 50%;
+    img {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(0px 4px 49px rgba(0, 0, 0, 0.14));
+    }
+  }
+}
+
+@media all and (max-width: 1000px) {
+  .previouswork.content-container {
+    flex-direction: column;
+  }
+
+  .previouswork > div {
+    max-width: 100%;
+  }
+}

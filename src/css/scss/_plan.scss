@@ -1,0 +1,18 @@
+.plan {
+  margin: 4rem 0;
+
+  h2 {
+    color: $primary-dark;
+  }
+
+  ul {
+    list-style-type: square;
+    margin-left: 3rem;
+
+    li {
+      color: $primary-light;
+      font-size: 18px;
+      margin: 0.4rem 0;
+    }
+  }
+}

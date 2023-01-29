@@ -1,0 +1,10 @@
+.button {
+  border-radius: 5px;
+  padding: 0.6rem 1.4rem;
+  font-size: rem-calc(13);
+  transition: 100ms ease-in-out;
+}
+
+.button:hover, .button:focus {
+  filter: brightness(90%);
+}

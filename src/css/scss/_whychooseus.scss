@@ -1,0 +1,32 @@
+.whychooseus {
+  background-color: $primary-dark;
+  padding: 4rem 0;
+
+  .content-container {
+
+    .whychooseus__image img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      filter: drop-shadow(0px 4px 49px rgba(0, 0, 0, 0.14));
+    }
+
+    > div {
+      flex-basis: 50%;
+    }
+  }
+}
+
+@media all and (max-width: 1200px) {
+  .whychooseus .content-container {
+    flex-direction: column-reverse;
+
+    .sectionintro {
+      max-width: 100%;
+    }
+
+    .whychooseus__image {
+      margin-top: 2.6rem;
+    }
+  }
+}

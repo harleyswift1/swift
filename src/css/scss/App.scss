@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+$true-white: #ffffff;
+$white: #f6f6f6;
+$light-grey: #CEE0D9;
+$primary-offwhite: #d8e5de;
+$primary-darker: #214A3B;
+$primary-dark: #2B5A49;
+$primary-light: #378162;
+$primary-lighter: #54A064;
+$primary-superlight: #50AC8B;
+
+$global-font: "Inter", sans-serif;
+
+@function rem-calc($value) {
+  @return ($value / 16) + rem;
+}
+
+body {
+  width: 100%;
+  background-color: #F2F8F5;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: $global-font;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: $primary-dark;
+  font-weight: bold;
+  font-size: 42px;
+}
+
+h2 {
+  margin: 0.4rem 0 0.8rem;
+}
+
+h3 {
+  margin: 0.6rem 0;
+  font-size: rem-calc(21);
+}
+
+p {
+  color: $primary-light;
+  line-height: 16*1.5px;
+}
+
+label {
+  color: $primary-dark;
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+input, select {
+  background-color: $true-white;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 0.8rem;
+  color: $primary-dark;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+textarea {
+  border: none;
+  border-radius: 5px;
+  resize: vertical;
+  outline: none;
+  padding: 1rem;
+  font-family: $global-font;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: $primary-dark;
+}
+
+.link-active {
+    text-shadow: 0 0 1px $primary-dark;
+}
+
+.content-container {
+  max-width: rem-calc(1200);
+  display: flex;
+  //border-left: 1px solid red;
+  //border-right: 1px solid red;
+  column-gap: 4rem;
+  margin: auto;
+}
+
+@media all and (max-width: 1250px) {
+  .content-container {
+    padding: 0 2rem;
+  }
+}
+
+@import 'topstrip';
+@import 'navbar';
+@import 'hero';
+@import 'button';
+@import 'whatwedo';
+@import 'sectionintro';
+@import 'whatyouneed';
+@import 'whychooseus';
+@import 'ourfeatures';
+@import 'believethestats';
+@import 'previouswork';
+@import 'factssection';
+@import 'contactsection';
+@import 'dropdown';
+@import "footer";
+@import "plan";
+@import "workwidget";

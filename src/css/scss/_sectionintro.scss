@@ -1,0 +1,33 @@
+.sectionintro {
+  max-width: rem-calc(390);
+  padding-bottom: 1rem;
+
+  .sectionintro__tag {
+    color: $primary-superlight;
+    font-size: rem-calc(16);
+  }
+
+  .sectionintro__title {
+    color: $primary-dark;
+    font-size: rem-calc(32);
+  }
+
+  .sectionintro__title--dark {
+    color: $white
+  }
+
+  .sectionintro__text {
+    color: $primary-light;
+  }
+
+  .sectionintro__tag--dark, .sectionintro__text--dark {
+    color: $light-grey;
+  }
+
+  hr {
+    border-color: $primary-superlight;
+    max-width: rem-calc(350);
+    margin-left: 0;
+  }
+
+}

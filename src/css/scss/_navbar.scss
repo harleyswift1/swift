@@ -1,0 +1,21 @@
+nav {
+  max-width: 100%;
+  background-color: transparent;
+  align-items: center;
+  display: flex;
+  padding: 0.6rem 2rem;
+
+  .nav-items {
+    margin-left: 4rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+  }
+}
+
+@media all and (max-width: 640px) {
+  nav .nav-items {
+    display: none;
+  }
+}

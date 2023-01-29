@@ -1,0 +1,12 @@
+.strip {
+  background-color: $true-white;
+  color: $primary-dark;
+  font-size: rem-calc(13);
+  padding: 0.4rem 0;
+}
+
+.strip--top {
+  text-align: center;
+  background-color: $primary-superlight;
+  color: $white;
+}
