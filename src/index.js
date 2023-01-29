@@ -38,7 +38,6 @@ function HomePage() {
         <PreviousWork/>
         <FactsSection/>
         <ContactSection/>
-        <h2>Hello World</h2>
     </>)
 }
 
