@@ -15,9 +15,11 @@ import ContactSection from "./pages/home/components/contactsection/ContactSectio
 import Footer from "./pages/home/components/footer/Footer";
 import PastWorkHero from "./pages/past-work/components/hero/PastWorkHero";
 import PastWorkWidgets from "./pages/past-work/components/hero/PastWorkWidgets";
+import OurServices from "./pages/services/components/ourservices/OurServices";
+import AnalysisPopup from "./pages/services/components/analysispopup/AnalysisPopup";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-const routes = [{path: "", element: <HomePage/>}, {path: "past-work", element: <PastWorkPage/>}, {path: "services", element: <ServicesPage/>}, {path: "contact", element: <ContactPage/>}];
+const routes = [{path: "", element: <HomePage/>}, {path: "past-work", element: <PastWorkPage/>}, {path: "services", element: <ServicesPage/>}, {path: "contact", element: <ContactPage/>}, {path: "analysis", element: <AnalysisPage/>}];
 
 root.render(<BrowserRouter>
     <Routes>
@@ -50,12 +52,20 @@ function PastWorkPage() {
 
 function ServicesPage() {
     return (<>
-
-        </>)
+        <AnalysisPopup showButton={true}/>
+        <OurServices/>
+        <ContactSection/>
+    </>)
 }
 
 function ContactPage() {
     return (<ContactSection/>)
+}
+
+function AnalysisPage() {
+    return (<>
+            <AnalysisPopup showButton={false}/>
+        </>)
 }
 
 function PageWrapper() {

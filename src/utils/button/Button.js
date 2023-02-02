@@ -1,3 +1,5 @@
+import {NavLink} from "react-router-dom";
+
 export default function Button(props) {
     const text = props.text;
     const backgroundColour = props.backgroundColour;
@@ -6,12 +8,12 @@ export default function Button(props) {
     const newTab = props.newTab;
     const onClick = props.onClick;
 
-    return (<a className={"button"}
-               href={link}
+    return (<NavLink className={"button"}
+               to={link}
                target={newTab ? "_blank" : "_self"}
                rel="noreferrer"
                style={{backgroundColor: backgroundColour, color: colour}}
                onClick={onClick}>
         {text}
-    </a>)
+    </NavLink>)
 }

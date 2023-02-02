@@ -1,0 +1,72 @@
+.content-container.ourservices {
+  flex-direction: column;
+}
+
+.ourservices {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+
+  hr {
+    width: 70%;
+    margin: 0.6rem 0;
+    border: 1px solid $primary-superlight;
+  }
+
+  .service-section {
+    margin-top: 5rem;
+    padding: 2rem;
+    background-color: $primary-light;
+    border-radius: 5px;
+    .sectionintro h2 {
+      font-size: rem-calc(50);
+    }
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+
+  .sectionintro {
+    max-width: 60%;
+  }
+
+  .widgets-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
+    .widget {
+      flex: 24% 1 1;
+      background-color: $primary-dark;
+      border-radius: 5px;
+      padding: 1.2rem;
+      min-width: rem-calc(250);
+    }
+
+    span {
+      font-weight: 700;
+      font-size: rem-calc(28);
+      height: auto;
+    }
+
+    p {
+      color: $primary-offwhite;
+      font-size: 18px;
+    }
+
+    svg {
+      position: relative;
+      top: 4px;
+    }
+  }
+}
+
+@media all and (max-width: 760px) {
+  .ourservices .sectionintro {
+    max-width: 100%;
+  }
+}
+
